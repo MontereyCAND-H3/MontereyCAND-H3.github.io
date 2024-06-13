@@ -4,7 +4,7 @@ layout: home
 
 <ul>
   {% for item in site.upcumming-trails %}
-    <li><a href="{{ item.url }}">Trail # {{ item.name }}:{{ item.name }}</a></li>
+    <li><a href="{{ item.url }}">Trail #{{ item.relative_path | split: '/' | last | split: '.' | first }}:{{ item.name }}</a></li>
   {% endfor %}
 </ul>
 
