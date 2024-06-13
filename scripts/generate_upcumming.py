@@ -46,7 +46,7 @@ def second_saturday(year, month):
 
 def get_next_n_months(basis_date: datetime.datetime, number_to_generate: int):
   event_dates = []
-  for i in range(number_to_generate):
+  for i in range(1, 1+number_to_generate):
     # Calculate the year and month
     year = basis_date.year + (basis_date.month + i - 1) // 12
     month = (basis_date.month + i - 1) % 12 + 1
@@ -73,7 +73,7 @@ def get_date_from_event_file(path_to_event) -> datetime.datetime:
 def get_base_text(event_date: datetime.datetime):
   base_text = f"---\n"
   base_text += f"name: A trail!?!?!\n"
-  base_text += f"hares: Maybe You?? (contact Jersey Lunchbox or current Hareraiser!)\n"
+  base_text += f"hares: maybe you?? (contact Jersey Lunchbox or current Hareraiser!)\n"
   base_text += f"location: TBD\n"
   base_text += f"date: {event_date.strftime('%Y-%m-%d')}\n"
   base_text += f"---\n"
