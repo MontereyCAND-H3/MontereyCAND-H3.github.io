@@ -1,18 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-</head>
+---
+layout: default
+---
+
 <body>
     <header>
-        <h1>{{ page.title }}</h1>
+        <h1>Trail #{{ page.relative_path | split: '/' | last | split: '.' | first }}: {{ page.name }}</h1>
     </header>
     <main>
+        <div id="trail-meta">
+            <table>
+                    <tr><td><b>Date</b></td> <td>{{page.date}}</td></tr>
+                    <tr><td><b>Hares:</b></td> <td>{{page.hares}}</td></tr>
+                    <tr><td><b>Location:</b></td> <td>{{page.location}}</td></tr>
+            </table>
+        </div>
         {{ content }}
     </main>
-    <footer>
-        <p>Footer content here</p>
-    </footer>
 </body>
-</html>
