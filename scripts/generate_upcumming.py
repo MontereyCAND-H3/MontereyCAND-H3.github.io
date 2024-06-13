@@ -17,7 +17,7 @@ def get_flags():
   parser = argparse.ArgumentParser()
   
   parser.add_argument("--num_to_add", type=int, default=6)
-  parser.add_argument("--upcumming_dir", default="_upcumming-trails")
+  parser.add_argument("--upcumming_dir", default="_trails")
   
   flags = parser.parse_args()
   return flags
@@ -72,6 +72,7 @@ def get_date_from_event_file(path_to_event) -> datetime.datetime:
 
 def get_base_text(event_date: datetime.datetime):
   base_text = f"---\n"
+  base_text += f"layout: trail_layout\n"
   base_text += f"name: A trail!?!?!\n"
   base_text += f"hares: maybe you?? (contact Jersey Lunchbox or current Hareraiser!)\n"
   base_text += f"location: TBD\n"

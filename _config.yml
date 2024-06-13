@@ -60,5 +60,5 @@ plugins:
 
 future: true
 collections:
-  upcumming-trails:
+  trails:
     output: true
