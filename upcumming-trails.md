@@ -3,14 +3,16 @@ layout: home
 ---
 
 {% assign current_time = site.time | date: "%s" %}
+{% comment %}
 {% assign future_trails = site.upcumming-trails | where_exp: "item", "item.time >= current_time" | limit: 10 %}
 {% assign past_trails = site.upcumming-trails | where_exp: "item", "item.time <= current_time" %}
+{% endcomment %}
 
 
 ### Future Trails
 
 <ul>
-  {% for item in future_trails | limit: 10 %}
+  {% for item in future_trails limit:10 %}
     <li><a href="{{ item.url }}">Trail #{{ item.relative_path | split: '/' | last | split: '.' | first }}:{{ item.name }}</a></li>
   {% endfor %}
 </ul>
