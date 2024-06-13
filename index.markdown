@@ -4,3 +4,10 @@
 
 layout: home
 ---
+
+If you're here then come back after I've had a chance to ruin the place!
+
+The official page is currently [here](https://www.candh3.club/)
+
+On-on!
+- Jersey
