@@ -12,7 +12,7 @@ layout: home
 
 <ul>
   {% for item in future_hashes %}
-    <li><a href="{{ item.url }}">Trail #{{ item.relative_path | split: '/' | last | split: '.' | first }}:{{ item.name }}</a></li>
+    <li><a href="{{ item.url}}">({{ item.date | date_to_string }}) Trail #{{ item.relative_path | split: '/' | last | split: '.' | first }}:{{ item.name }}</a></li>
   {% endfor %}
 </ul>
 
