@@ -3,14 +3,15 @@ layout: home
 ---
 
 {% assign current_date = site.time %}
-{% assign future_hashes = site.collection_name | where_exp: "item", "item.date > current_date" %}
+{% assign future_hashes = site.collection_name | where_exp: "item", "item.date >= current_date" %}
+{% assign past_hashes = site.collection_name | where_exp: "item", "item.date < current_date" %}
 
 
 
 ### Future Trails
 
 <ul>
-  {% for item in future_hashes limit:10 %}
+  {% for item in future_hashes %}
     <li><a href="{{ item.url }}">Trail #{{ item.relative_path | split: '/' | last | split: '.' | first }}:{{ item.name }}</a></li>
   {% endfor %}
 </ul>
@@ -23,7 +24,7 @@ layout: home
 ### Past Trails
 
 <ul>
-  {% for item in past_trails %}
+  {% for item in past_hashes %}
     <li><a href="{{ item.url }}">Trail #{{ item.relative_path | split: '/' | last | split: '.' | first }}:{{ item.name }}</a></li>
   {% endfor %}
 </ul>
