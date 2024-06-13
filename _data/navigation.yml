@@ -1,11 +1,11 @@
 main:
   - title: "Upcumming Trails"
-    url: /upcumming-trails/
+    url: /upcumming-trails
   - title: "Nearby Kennels"
-    url: /nearby-kennels/
+    url: /nearby-kennels
   - title: "FAQ"
-    url: /faq/
+    url: /faq
   - title: "Hare Guide"
-    url: /hare-guide/
+    url: /hare-guide
   - title: "H3 History"
-    url: /history/
+    url: /history
