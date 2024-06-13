@@ -3,8 +3,8 @@ layout: home
 ---
 
 {% assign current_date = site.time %}
-{% assign future_hashes = site.collection_name | where_exp: "item", "item.date >= current_date" %}
-{% assign past_hashes = site.collection_name | where_exp: "item", "item.date < current_date" %}
+{% assign future_hashes = site.upcumming-trails | where_exp: "item", "item.date >= current_date" %}
+{% assign past_hashes = site.upcumming-trails | where_exp: "item", "item.date < current_date" %}
 
 
 
