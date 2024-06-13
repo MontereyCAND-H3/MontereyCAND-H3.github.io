@@ -9,7 +9,7 @@ layout: default
     <main>
         <div id="trail-meta">
             <table>
-                    <tr><td><b>Date</b></td> <td>{{page.date}}</td></tr>
+                    <tr><td><b>Date</b></td> <td>{{page.date | date_to_long_string}} @ 1PM HST (really PST but we always run late)</td></tr>
                     <tr><td><b>Hares:</b></td> <td>{{page.hares}}</td></tr>
                     <tr><td><b>Location:</b></td> <td>{{page.location}}</td></tr>
             </table>
