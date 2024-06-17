@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   All those who like adult beverages, bawdy limicks, and can bear a slow walk between those two are encouraged to join!
   On-on!
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://montereycandh3.beer/" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
