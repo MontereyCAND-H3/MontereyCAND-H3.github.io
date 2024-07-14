@@ -91,7 +91,7 @@ def main():
   starting_date : datetime.datetime = get_date_from_event_file(latest)
   for event_number, event_date in enumerate(get_next_n_months(starting_date, flags.num_to_add), start=latest_event_number+1):
     log.info(f"Generating event #{event_number} for {event_date}")
-    event_filename = os.path.join(flags.upcumming_dir, f"{event_number}.md")
+    event_filename = os.path.join(flags.upcumming_dir, f"{event_number}-{event_date.strftime('%b%y')}.md")
     event_text = get_base_text(event_date)
     
     with open(event_filename, 'w') as fid:
