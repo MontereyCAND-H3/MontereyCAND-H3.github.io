@@ -60,6 +60,9 @@ logo: assets/imgs/SurfingHare.png
 #   - vendor/gems/
 #   - vendor/ruby/
 
+atom_feed:
+  hide: true
+
 
 future: true
 collections:

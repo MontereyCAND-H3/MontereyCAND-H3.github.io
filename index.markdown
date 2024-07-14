@@ -1,8 +1,9 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+# https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_pages/home.md
 
-layout: home
+layout: splash
 ---
 
 Welcome to the homepage of the Monterey CAN'd [Hash House Harriers](https://www.hashhouseharriers.com/what-is-hashing/)!

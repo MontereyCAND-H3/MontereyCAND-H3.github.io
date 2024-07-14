@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: posts
 ---
 
 {% assign current_date = site.time %}
